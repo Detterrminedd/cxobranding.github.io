@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -173,7 +174,7 @@ button:hover
 }
 
 .cartoon{
-  position: absolute;
+  position: fixed;
   top: 2.05em;
   left: 65em;
 }
@@ -194,7 +195,7 @@ button:hover
 }
 
 .mickey{
-  position: absolute;
+  position: fixed;
   top: 27em;
   left: 2.05em;
 }
@@ -230,7 +231,16 @@ button:hover
 .parallax-inner{
   padding-top: 19em;
   padding-bottom: 19em;
+  animation: parallax-inner 7s linear infinite;
+}
 
+@keyframes parallax-inner {
+  0%, 100% {
+    transform: translateX(2.7em);
+  }
+  50% {
+    transform: translateX(-2.7em);
+  }
 }
 
 .parallax-inner1{
@@ -319,7 +329,7 @@ h1{
 
 .list-inline-item{
   height:2.7em;
-  /* line-height:2em; */
+  line-height:2em;
   display:inline-block;
   text-align:center;
 }
@@ -330,6 +340,7 @@ h1{
   margin: 0 auto;
   padding: 5em 0 5em 0;
 }
+
 
 /* mobile version */
 
